@@ -1,0 +1,91 @@
+include ../../components/button/button.pug
+
+mixin clients()
+  section.clients
+    .wrapper
+      h2
+        span.clients__title Кому нужна 
+          strong dostavka.io?
+      ul.clients__list
+
+        li.client.js-client
+          .client__icon
+            img(src=require('../../assets/client-1.svg'), alt="Client")
+          .client__info
+            .client__name Ритейлеру или производственной компании
+            ul.client__advantages
+              li Знаю вовремя ли я подал транспортное средство под загрузку.
+              li Знаю вовремя ли я доставил груз.
+              li Знаю вовремя ли мой грузовик загрузили или разгрузили.
+              li Вижу в каком состоянии был доставлен груз.
+              li Знаю доволен ли мой заказчик.
+          .client__chevron
+            svg(width='16', height='25', viewBox='0 0 16 25', fill='none', xmlns='http://www.w3.org/2000/svg')
+              rect(x='3.46655', y='24.5636', width='3.59299', height='17.0667', transform='rotate(-135 3.46655 24.5636)', fill='#C4C4C4')
+              path(d='M3.46631 0.0743408L0.925682 2.61497L12.9937 14.6829L15.2977 12.4372L3.46631 0.0743408Z', fill='#C4C4C4')
+
+        li.client.js-client.is-expanded
+          .client__icon
+            img(src=require('../../assets/client-2.svg'), alt="Client")
+          .client__info
+            .client__name Транспортной компании
+            ul.client__advantages
+              li Знаю вовремя ли я подал транспортное средство под загрузку.
+              li Знаю вовремя ли я доставил груз.
+              li Знаю вовремя ли мой грузовик загрузили или разгрузили.
+              li Вижу в каком состоянии был доставлен груз.
+              li Знаю доволен ли мой заказчик.
+          .client__chevron
+            svg(width='16', height='25', viewBox='0 0 16 25', fill='none', xmlns='http://www.w3.org/2000/svg')
+              rect(x='3.46655', y='24.5636', width='3.59299', height='17.0667', transform='rotate(-135 3.46655 24.5636)', fill='#C4C4C4')
+              path(d='M3.46631 0.0743408L0.925682 2.61497L12.9937 14.6829L15.2977 12.4372L3.46631 0.0743408Z', fill='#C4C4C4')
+
+        li.client.js-client
+          .client__icon
+            img(src=require('../../assets/client-3.svg'), alt="Client")
+          .client__info
+            .client__name Складскому оператору
+            ul.client__advantages
+              li Знаю вовремя ли я подал транспортное средство под загрузку.
+              li Знаю вовремя ли я доставил груз.
+              li Знаю вовремя ли мой грузовик загрузили или разгрузили.
+              li Вижу в каком состоянии был доставлен груз.
+              li Знаю доволен ли мой заказчик.
+          .client__chevron
+            svg(width='16', height='25', viewBox='0 0 16 25', fill='none', xmlns='http://www.w3.org/2000/svg')
+              rect(x='3.46655', y='24.5636', width='3.59299', height='17.0667', transform='rotate(-135 3.46655 24.5636)', fill='#C4C4C4')
+              path(d='M3.46631 0.0743408L0.925682 2.61497L12.9937 14.6829L15.2977 12.4372L3.46631 0.0743408Z', fill='#C4C4C4')
+
+        li.client.js-client
+          .client__icon
+            img(src=require('../../assets/client-4.svg'), alt="Client")
+          .client__info
+            .client__name Менеджеру
+            ul.client__advantages
+              li Знаю вовремя ли я подал транспортное средство под загрузку.
+              li Знаю вовремя ли я доставил груз.
+              li Знаю вовремя ли мой грузовик загрузили или разгрузили.
+              li Вижу в каком состоянии был доставлен груз.
+              li Знаю доволен ли мой заказчик.
+          .client__chevron
+            svg(width='16', height='25', viewBox='0 0 16 25', fill='none', xmlns='http://www.w3.org/2000/svg')
+              rect(x='3.46655', y='24.5636', width='3.59299', height='17.0667', transform='rotate(-135 3.46655 24.5636)', fill='#C4C4C4')
+              path(d='M3.46631 0.0743408L0.925682 2.61497L12.9937 14.6829L15.2977 12.4372L3.46631 0.0743408Z', fill='#C4C4C4')
+
+        li.client.js-client
+          .client__icon
+            img(src=require('../../assets/client-5.svg'), alt="Client")
+          .client__info
+            .client__name Водителю
+            ul.client__advantages
+              li Знаю вовремя ли я подал транспортное средство под загрузку.
+              li Знаю вовремя ли я доставил груз.
+              li Знаю вовремя ли мой грузовик загрузили или разгрузили.
+              li Вижу в каком состоянии был доставлен груз.
+              li Знаю доволен ли мой заказчик
+          .client__chevron
+            svg(width='16', height='25', viewBox='0 0 16 25', fill='none', xmlns='http://www.w3.org/2000/svg')
+              rect(x='3.46655', y='24.5636', width='3.59299', height='17.0667', transform='rotate(-135 3.46655 24.5636)', fill='#C4C4C4')
+              path(d='M3.46631 0.0743408L0.925682 2.61497L12.9937 14.6829L15.2977 12.4372L3.46631 0.0743408Z', fill='#C4C4C4')
+      .clients__connect-for-free
+        +button('Подключиться бесплатно')

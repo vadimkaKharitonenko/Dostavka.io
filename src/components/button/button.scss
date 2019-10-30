@@ -1,0 +1,18 @@
+.button {
+  padding: 20px 22px 22px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #0A1D42;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background: #17346C;
+  }
+}

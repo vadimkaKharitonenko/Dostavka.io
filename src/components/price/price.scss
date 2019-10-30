@@ -1,0 +1,60 @@
+.price {
+  .wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 76px;
+    padding-bottom: 208px;
+    background-image: url('../../assets/man.png');
+    background-size: 571px 704px;
+    background-repeat: no-repeat;
+    background-position: 100% -100%;
+  }
+
+  .button {
+    width: 270px;
+  }
+
+  &__title {
+    position: relative;
+    display: block;
+    width: max-content;
+    margin: 0 auto 95px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #0A1D42;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -21px;
+      left: 115px;
+      width: 80px;
+      height: 3px;
+      background: #832FA5;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 17px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #152E5E;
+  }
+
+  &__description {
+    margin-bottom: 33px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135.18%;
+    color: #0A1D42;
+  }
+}

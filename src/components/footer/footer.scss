@@ -1,0 +1,42 @@
+.footer {
+  .wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 49px 0;
+  }
+
+  .footer__phone,
+  .footer__mail {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-bottom: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0A1D42;
+  }
+
+  .footer__mail {
+    margin-bottom: 13px;
+
+    a {
+      color: #0A1D42;
+    }
+  }
+
+  .footer__copyrights {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0A1D42;
+    opacity: 0.5;
+  }
+}

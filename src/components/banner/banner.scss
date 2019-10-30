@@ -1,0 +1,26 @@
+.banner {
+  background-color: #F5F6F8;
+  
+  .wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 146px;
+    padding-bottom: 280px;
+    background-image: url('../../assets/cars.png');
+    background-size: 641px 491px;
+    background-repeat: no-repeat;
+    background-position: 100% 75%;
+  }
+
+  &__title {
+    display: block;
+    width: 715px;
+    margin-bottom: 26px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #152E5E;
+  }
+}

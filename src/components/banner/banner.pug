@@ -1,0 +1,11 @@
+include ../button/button.pug
+
+mixin banner()
+  section.banner
+    .wrapper
+      h1
+        span.banner__title 
+          strong
+            | Dostavka.io 
+          | – это полная прозрачность ваших транспортных операций в реальном времени и полностью довольный заказчик.
+      +button('Подключиться бесплатно')
