@@ -15,6 +15,9 @@ const config = {
   devServer: {
     port: 3000,
   },
+  optimization: {
+    minimize: false
+  },
   module: {
     rules: [
       {
