@@ -138,3 +138,38 @@
     }
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .plan {
+    .wrapper {
+      width: 360px;
+      padding-top: 25px;
+      padding-bottom: 17px;
+    }
+
+    &__title {
+      width: 320px;
+      margin: 0 auto 50px;
+      font-size: 18px;
+      text-align: left;
+
+      &::after {
+        bottom: -10px;
+      }
+    }
+
+    &__steps {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    .step {
+      width: 320px;
+      margin-bottom: 20px;
+    }
+  }
+}

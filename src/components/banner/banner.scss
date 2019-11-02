@@ -24,3 +24,29 @@
     color: #152E5E;
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .banner {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 360px;
+      padding-top: 44px;
+      padding-bottom: 350px;
+      background-size: 321px 246px;
+      background-position: 45% 90%;
+    }
+
+    &__title {
+      width: 320px;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      
+    }
+  }
+}

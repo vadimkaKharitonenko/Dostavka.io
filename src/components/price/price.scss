@@ -58,3 +58,58 @@
     color: #0A1D42;
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .price {
+    .wrapper {
+      width: 360px;
+      padding-top: 50px;
+      padding-bottom: 30px;
+      background-size: 179px 220px;
+      background-position: 100% 100%;
+    }
+
+    &__title {
+      width: 320px;
+      margin: 0 auto 50px;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+
+      &::after {
+        bottom: -10px;
+        left: 117px;
+      }
+    }
+
+    .price__subtitle {
+      width: 220px;
+      margin-left: 20px;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .price__description {
+      margin-left: 20px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 135.18%;
+    }
+
+    .button {
+      margin-left: 20px;
+      width: 186px;
+      height: 60px;
+      padding: 12px 22px 22px;
+    }
+  }
+}
+

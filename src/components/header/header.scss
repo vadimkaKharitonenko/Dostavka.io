@@ -48,3 +48,16 @@
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header {
+    .wrapper {
+      width: 360px;
+      padding: 0 20px;
+    }
+  }
+}

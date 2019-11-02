@@ -40,3 +40,16 @@
     opacity: 0.5;
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .footer {
+    .wrapper {
+      width: 360px;
+    }
+
+    .footer__phone,
+    .footer__mail {
+      margin: 0 auto 16px;
+    }
+  }
+}

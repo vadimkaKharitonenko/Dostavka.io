@@ -99,3 +99,36 @@
     }
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .indicators {
+    .wrapper {
+      width: 360px;
+    }
+
+    &__title {
+      width: 320px;
+      margin: 0 auto 50px;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+
+      &::after {
+        bottom: -10px;
+        left: 117px;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      height: unset;
+    }
+
+    .indicator {
+      margin-bottom: 45px;
+    }
+  }
+}

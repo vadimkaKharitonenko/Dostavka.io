@@ -63,3 +63,39 @@
     color: #0A1D42;
   }
 }
+
+@media screen and (max-width: 1169px) {
+  .advantages {
+    .wrapper {
+      width: 360px;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      height: unset;
+    }
+
+    .advantage {
+      width: 320px;
+      margin-bottom: 22px;
+    }
+
+    &__title {
+      width: 320px;
+      margin: 0 auto 50px;
+      font-family: Roboto Slab;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+
+      &::after {
+        bottom: -10px;
+        left: 117px;
+      }
+    }
+  }
+}
+
