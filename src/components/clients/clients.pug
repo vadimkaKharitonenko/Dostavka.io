@@ -1,7 +1,7 @@
 include ../../components/button/button.pug
 
 mixin clients()
-  section.clients
+  section.clients.js-clients
     .wrapper
       h2
         span.clients__title Кому нужна 
@@ -88,4 +88,4 @@ mixin clients()
               rect(x='3.46655', y='24.5636', width='3.59299', height='17.0667', transform='rotate(-135 3.46655 24.5636)', fill='#C4C4C4')
               path(d='M3.46631 0.0743408L0.925682 2.61497L12.9937 14.6829L15.2977 12.4372L3.46631 0.0743408Z', fill='#C4C4C4')
       .clients__connect-for-free
-        +button('Подключиться бесплатно')
+        +button('Подключиться бесплатно', true)

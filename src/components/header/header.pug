@@ -6,13 +6,13 @@ mixin header()
       nav.header__navigation
         ul.navigation
           li.navigation__item
-            a(href="") Зачем
+            a(href="" data-target="js-targets").js-navigation-link Зачем
           li.navigation__item
-            a(href="") Кому нужно
+            a(href="" data-target="js-clients").js-navigation-link Кому нужно
           li.navigation__item
-            a(href="") Преимущества
+            a(href="" data-target="js-advantages").js-navigation-link Преимущества
           li.navigation__item
-            a(href="") Стоимость
+            a(href="" data-target="js-price").js-navigation-link Стоимость
           li.navigation__item
-            a(href="") Клиенты
-      a(href="").header__connect-for-free Подключиться бесплатно
+            a(href="" data-target="js-our-clients").js-navigation-link Клиенты
+      a(href="").header__connect-for-free.js-open-callback-form Подключиться бесплатно

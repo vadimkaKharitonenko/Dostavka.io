@@ -1,0 +1,140 @@
+.plan {
+  .wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    position: relative;
+    display: block;
+    width: max-content;
+    margin-bottom: 57px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #0A1D42;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -21px;
+      left: 0px;
+      width: 80px;
+      height: 3px;
+      background: #832FA5;
+    }
+  }
+
+  &__description {
+    margin-bottom: 47px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0A1D42;
+  }
+
+  &__steps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .step {
+    width: 370px;
+    height: 295px;
+    padding: 42px 32px;
+    border: 1px solid rgba(21, 46, 94, .2);
+    border-radius: 4px;
+  }
+
+  .step__description {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135.18%;
+    color: #0A1D42;
+  }
+
+  .step__number {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 28px;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%;
+
+    &::after {
+      content: attr(data-progress);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      background-color: white;
+      border-radius: 50%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 135.18%;
+      color: #832FA5;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 60px;
+      height: 60px;
+      background: url('../../assets/ellipse-1.png');
+      background-repeat: no-repeat;
+      z-index: 1;
+      background-position: 100% 0;
+    }
+  }
+
+  .step:nth-child(2) {
+    .step__number {
+      &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 60px;
+        height: 60px;
+        background: url('../../assets/ellipse-2.png');
+        background-repeat: no-repeat;
+        z-index: 1;
+        background-position: 100% 0;
+      }
+    }
+  }
+
+  .step:nth-child(3) {
+    .step__number {
+      &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 60px;
+        height: 60px;
+        background: url('../../assets/ellipse-3.png');
+        background-repeat: no-repeat;
+        z-index: 1;
+        background-position: 100% 0;
+      }
+    }
+  }
+}

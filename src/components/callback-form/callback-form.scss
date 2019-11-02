@@ -1,0 +1,156 @@
+.callback-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.3);
+
+  &.hidden {
+    display: none;
+  }
+
+  .callback-form__form {
+    width: 576px;
+    height: 500px;
+    padding: 19px 25px;
+    background-color: white;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 87px;
+  }
+
+  .form__tip {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130.18%;
+    text-align: center;
+    color: rgba(17, 22, 66, .2);
+  }
+
+  .form__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form__title {
+    margin-bottom: 29px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130.18%;
+    text-align: center;
+    color: #832FA5;
+  }
+
+  .form__field {
+    position: relative;
+    margin-bottom: 31px;
+
+    &.is-error {
+      &::before {
+        content: 'Заполните обязательное поле';
+        position: absolute;
+        top: -22px;
+        right: 0;
+        padding: 3px 7px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 125.68%;
+        text-align: center;
+        color: #FF0068;
+        border-radius: 8px;
+        background: rgba(255, 0, 104, .2);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -9px;
+        right: 23px;
+        width: 6px;
+        height: 6px;
+        background: linear-gradient(-45deg, rgba(255, 0, 104, .2) 50%, transparent 50%) ;
+        transform: rotate(45deg);
+      }
+    }
+
+    input {
+      width: 264px;
+      padding: 10px 19px 12px;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 125.68%;
+      color: #111642;
+      border: 1px solid rgba(17, 22, 66, .2);
+      border-radius: 56px;
+
+      &::placeholder {
+        color: rgba(17, 22, 66, 0.15);
+      }
+    }
+  }
+
+  .agreement {
+    display: flex;
+    width: 264px;
+  }
+
+  .agreement__checkbox {
+    cursor: pointer;
+
+    svg:last-child {
+      display: none;
+    }
+
+    &.is-checked {
+      svg:first-child {
+        display: none;
+      }
+
+      svg:last-child {
+        display: block;
+      }
+    }
+  }
+
+  .agreement__description {
+    width: 210px;
+    margin-left: 14px;
+    margin-bottom: 25px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 125.68%;
+    color: #111642;
+  }
+
+  .form {
+    .button {
+      width: 151px;
+    }
+  }
+}

@@ -1,6 +1,13 @@
+include ../../components/donat/donat.pug
+include ../../components/callback-form/callback-form.pug
+include ../../components/success-form/success-form.pug
+
 mixin footer()
   footer.footer
+    +callback-form()
+    +success-form()
     .wrapper
+      +donat()
       .footer__phone 
         span Телефон: 
           strong +7 961 763 44 55

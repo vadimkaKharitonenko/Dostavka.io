@@ -2,6 +2,8 @@ include ../../components/header/header.pug
 include ../../components/banner/banner.pug
 include ../../components/targets/targets.pug
 include ../../components/clients/clients.pug
+include ../../components/plan/plan.pug
+include ../../components/indicators/indicators.pug
 include ../../components/advantages/advantages.pug
 include ../../components/price/price.pug
 include ../../components/our-clients/our-clients.pug
@@ -13,12 +15,14 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Dostavka.io
-    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:400,700|Ubuntu&display=swap&subset=cyrillic" rel="stylesheet")
   body
     +header()
     +banner()
     +targets()
     +clients()
+    +plan()
+    +indicators()
     +advantages()
     +price()
     +our-clients()

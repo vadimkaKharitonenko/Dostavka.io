@@ -1,0 +1,45 @@
+.donat {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    &::after,
+    &::before {
+      display: block;
+    }
+  }
+
+  &::after {
+    content: 'Внести пожертвование';
+    position: absolute;
+    top: -75px;
+    right: 0;
+    display: none;
+    padding: 20px 16px 22px;
+    background: #FFDF39;
+    white-space: nowrap;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #0A1D42;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    right: 18px;
+    display: none;
+    width: 15px;
+    height: 15px;
+    background: #FFDF39;
+    transform: rotate(45deg);
+  }
+}

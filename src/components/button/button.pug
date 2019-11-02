@@ -1,2 +1,5 @@
-mixin button( text )
-  button.button= text
+mixin button( text, isOpenCallbackForm )
+  if isOpenCallbackForm
+    button.button.js-open-callback-form= text
+  else 
+    button.button= text

@@ -1,10 +1,10 @@
 include ../../components/button/button.pug
 
 mixin price()
-  section.price
+  section.price.js-price
     .wrapper
       h2
         span.price__title Сколько это стоит?
       .price__subtitle Бесплатно на целый год
       .price__description Начни использовать завтра.
-      +button('Подключиться бесплатно')
+      +button('Подключиться бесплатно', true)
