@@ -50,3 +50,11 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .banner {
+    .wrapper {
+      width: 320px;
+    }
+  }
+}

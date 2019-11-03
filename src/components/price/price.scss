@@ -113,3 +113,10 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .price {
+    .wrapper {
+      width: 320px;
+    }
+  }
+}

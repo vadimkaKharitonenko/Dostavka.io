@@ -132,3 +132,11 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .indicators {
+    .wrapper {
+      width: 320px;
+    }
+  }
+}

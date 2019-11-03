@@ -158,3 +158,11 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .clients {
+    .wrapper {
+      width: 320px;
+    }
+  }
+}

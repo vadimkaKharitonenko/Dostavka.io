@@ -99,3 +99,10 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .advantages {
+    .wrapper {
+      width: 320px;
+    }
+  }
+}

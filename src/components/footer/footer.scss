@@ -53,3 +53,11 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .footer {
+    .wrapper {
+      width: 320px;
+    }
+  }
+}
